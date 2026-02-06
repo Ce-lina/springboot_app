@@ -1,6 +1,6 @@
 # Utilisez une image de base avec Java 
 
-FROM eclipse-temurin:17-jdk 
+FROM eclipse-temurin:17-jre 
 
 # Définir le répertoire de travail dans le conteneur 
 
@@ -16,4 +16,4 @@ EXPOSE 8080
 
 # Commande pour lancer l'application Spring Boot 
 
-ENTRYPOINT ["java", "-jar", "/app/app.jar"] 
+ENTRYPOINT ["java", "-jar", "app.jar"] 
